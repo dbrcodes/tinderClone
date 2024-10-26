@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   pageContainer: {
     justifyContent: "center",
     alignItems: "center",
-    flex: 1
+    flex: 1,
   },
   card: {
     // card shape
