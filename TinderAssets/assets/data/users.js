@@ -1,10 +1,10 @@
 export default [
   {
     id: '1',
-    name: 'Vadim Savin',
-    age: 27,
+    name: 'DBR Codes',
+    age: 30,
     image:
-      'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim1.JPG',
+      'https://pbs.twimg.com/media/GP9p2SdWYAAsYGe?format=jpg&name=large',
     bio: 'I will be the semicolons to your code',
   },
   {
@@ -38,5 +38,13 @@ export default [
     image:
       'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim1.JPG',
     bio: 'Hola',
+  },
+  {
+    id: '6',
+    name: 'Jeffrey Bezos',
+    age: 60,
+    image:
+      'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/jeff.jpeg',
+    bio: 'CEO, entrepreneur born in 1964, Jeffrey, Jeffrey Bezos',
   },
 ];
