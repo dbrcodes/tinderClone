@@ -31,9 +31,8 @@ const styles = StyleSheet.create({
     // card shape
     width: '100%',
     height: '100%',
-    backgroundColor: 'red',
+    backgroundColor: '#fefefe',
     borderRadius: 10,
-    overflow: 'hidden',
 
     // card shadows
     shadowColor: "#000",
