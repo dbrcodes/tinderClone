@@ -118,7 +118,7 @@ const AnimatedStack = (props) => {
   }, [currentIndex, translateX],)
 
   return (
-    <GestureHandlerRootView style={{ flex: 1 }}>
+    <GestureHandlerRootView style={styles.gestureHandlerRoot}>
       <View style={styles.root}>
 
         {nextProfile && ( // conditional check to see if next profile is not null(this causes an issue where it checks for next index that doesnt exist)
@@ -145,12 +145,14 @@ const AnimatedStack = (props) => {
 };
 
 const styles = StyleSheet.create({
+  gestureHandlerRoot: {
+    flex: 1,
+    width: '100%', // Full width for the GestureHandlerRootView
+  },
   root: {
     justifyContent: "center",
     alignItems: "center",
     flex: 1,
-    width: '100%',
-    backgroundColor: 'yellow',
   },
   animatedCard: {
     width: '90%',
