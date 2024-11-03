@@ -4,10 +4,11 @@ import {
   StyleSheet,
   StatusBar,
 } from 'react-native';
+import Card from '../component/tinderCard';
+import users from '../../TinderAssets/assets/data/users'
+import AnimatedStack from "../component/tinderCard/animatedStack";
 
-import HomeScreen from "./src/screens/HomeScreen";
-
-const App = () => {
+const HomeScreen = () => {
 
   // these two variables control what happens when you swipe left or right
   const onSwipeLeft = (user) => {
@@ -30,7 +31,12 @@ const App = () => {
 
 
 
-      <HomeScreen />
+      <AnimatedStack
+        data={users}
+        renderItem={({ item }) => <Card user={item} />}
+        onSwipeLeft={onSwipeLeft}
+        onSwipeRight={onSwipeRight}
+      />
 
     </View>
   );
@@ -47,4 +53,4 @@ const styles = StyleSheet.create({
 
 })
 
-export default App;
+export default HomeScreen;

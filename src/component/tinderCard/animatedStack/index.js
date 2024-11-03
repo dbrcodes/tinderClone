@@ -150,7 +150,7 @@ const AnimatedStack = (props) => {
 const styles = StyleSheet.create({
   gestureHandlerRoot: {
     flex: 1,
-    width: '100%', // Full width for the GestureHandlerRootView
+    // width: '100%',  Full width for the GestureHandlerRootView
   },
   root: {
     justifyContent: "center",
