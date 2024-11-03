@@ -11,6 +11,16 @@ import AnimatedStack from "./src/component/tinderCard/animatedStack";
 
 const App = () => {
 
+  // these two variables control what happens when you swipe left or right
+  const onSwipeLeft = (user) => {
+    console.warn("swipe left", user.name)
+  };
+
+  const onSwipeRight = (user) => {
+    console.warn("swipe right: ", user.name)
+  };
+  // ----
+
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <View style={styles.pageContainer}>
@@ -21,9 +31,13 @@ const App = () => {
           barStyle="dark-content" // Use "dark-content" for dark icons or "light-content" for light icons
         />
 
+
+
         <AnimatedStack
           data={users}
           renderItem={({ item }) => <Card user={item} />}
+          onSwipeLeft={onSwipeLeft}
+          onSwipeRight={onSwipeRight}
         />
 
       </View>
