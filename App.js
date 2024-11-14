@@ -6,6 +6,7 @@ import {
 } from 'react-native';
 
 import HomeScreen from "./src/screens/HomeScreen";
+import MatchScreen from "./src/screens/MatchScreen";
 
 const App = () => {
 
@@ -28,9 +29,7 @@ const App = () => {
         barStyle="dark-content" // Use "dark-content" for dark icons or "light-content" for light icons
       />
 
-
-
-      <HomeScreen />
+      <MatchScreen />
 
     </View>
   );
@@ -41,8 +40,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     flex: 1,
-    //backgroundColor: 'green',
-    width: '100%',
   },
 
 })

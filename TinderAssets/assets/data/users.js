@@ -35,8 +35,7 @@ export default [
     id: '5',
     name: 'Vadim Savin',
     age: 27,
-    image:
-      'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim1.JPG',
+    image: null,
     bio: 'Hola',
   },
   {

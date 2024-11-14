@@ -32,7 +32,8 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     backgroundColor: '#fefefe',
-    borderRadius: 10,
+    borderRadius: 10, // without overflow hidden, the border radius doesnt work
+    overflow: 'hidden', // 
 
     // card shadows
     shadowColor: "#000",
@@ -49,7 +50,7 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     justifyContent: 'flex-end',
-
+    borderRadius: 10,
   },
   cardInner:
   {
