@@ -29,7 +29,7 @@ const App = () => {
         onPress={() => setActiveTab('likes')}
       />
       <Ionicons
-        name="ios-chatbubbles"
+        name="chatbubbles"
         size={activeTab === 'matches' ? 34 : 30}
         color={activeTab === 'matches' ? '#f63a6e' : '#757575'}
         onPress={() => setActiveTab('matches')}
