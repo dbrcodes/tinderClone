@@ -10,25 +10,32 @@ const MatchScreen = () => {
       {/* using square brackets (creating an array) allows pulling styles from multiple sources */}
 
       <View style={styles.container} >
+        <View style={styles.matches}>
+          <Text style={styles.text}>
+            New Matches
+          </Text>
 
-        <Text style={styles.text}>
-          New Matches
-        </Text>
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            style={styles.users}
+          >
+            {users.map(user => (
+              <View key={user.id} style={styles.user}>
+                <Image
+                  source={user.image ? { uri: user.image } : DEFAULT_IMAGE}
+                  style={styles.image}
+                />
+              </View>
+            ))}
+          </ScrollView>
+        </View>
 
-        <ScrollView
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          style={styles.users}
-        >
-          {users.map(user => (
-            <View key={user.id} style={styles.user}>
-              <Image
-                source={user.image ? { uri: user.image } : DEFAULT_IMAGE}
-                style={styles.image}
-              />
-            </View>
-          ))}
-        </ScrollView>
+        <View style={styles.messages}>
+          <Text style={styles.text}>
+            Messages
+          </Text>
+        </View>
 
       </View>
 
@@ -55,7 +62,7 @@ const styles = StyleSheet.create({
     margin: 5,
     padding: 2,
     borderWidth: 2,
-    borderColor: '#f63a6e',
+    borderColor: '#F76C6B',
     borderRadius: 50,
   },
   image: {
@@ -66,9 +73,16 @@ const styles = StyleSheet.create({
   text: {
     fontWeight: 'bold',
     fontSize: 24,
-    color: '#f63a6e',
+    color: '#F76C6B',
     paddingLeft: 15,
-  }
+  },
+  matches: {
+    marginTop: 10,
+    marginBottom: 15,
+  },
+  messages: {
+
+  },
 })
 
 export default MatchScreen

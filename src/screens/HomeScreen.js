@@ -2,7 +2,7 @@ import React from "react";
 import {
   View,
   StyleSheet,
-  StatusBar,
+  Pressable
 } from 'react-native';
 import Card from '../component/tinderCard';
 import users from '../../TinderAssets/assets/data/users'
@@ -37,23 +37,33 @@ const HomeScreen = () => {
       <View style={styles.icons}>
 
         <View style={styles.button}>
-          <FontAwesome name="undo" size={24} color="#FBD88B" />
+          <Pressable>
+            <FontAwesome name="undo" size={24} color="#FBD88B" />
+          </Pressable>
         </View>
 
         <View style={styles.mainbutton}>
-          <Entypo name="cross" size={40} color="#F76C6B" />
+          <Pressable>
+            <Entypo name="cross" size={40} color="#F76C6B" />
+          </Pressable>
         </View>
 
         <View style={styles.button}>
-          <FontAwesome name="star" size={28} color="#3AB4CC" />
+          <Pressable>
+            <FontAwesome name="star" size={28} color="#3AB4CC" />
+          </Pressable>
         </View>
 
         <View style={styles.mainbutton}>
-          <FontAwesome name="heart" size={28} color="#4FCC94" />
+          <Pressable>
+            <FontAwesome name="heart" size={28} color="#4FCC94" />
+          </Pressable>
         </View>
 
         <View style={styles.button}>
-          <Ionicons name="flash" size={28} color="#A65CD2" />
+          <Pressable>
+            <Ionicons name="flash" size={28} color="#A65CD2" />
+          </Pressable>
         </View>
 
       </View>
