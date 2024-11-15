@@ -40,20 +40,20 @@ const HomeScreen = () => {
           <FontAwesome name="undo" size={24} color="#FBD88B" />
         </View>
 
-        <View style={styles.button}>
-          <Entypo name="cross" size={24} color="#F76C6B" />
+        <View style={styles.mainbutton}>
+          <Entypo name="cross" size={40} color="#F76C6B" />
         </View>
 
         <View style={styles.button}>
-          <FontAwesome name="star" size={24} color="#3AB4CC" />
+          <FontAwesome name="star" size={28} color="#3AB4CC" />
+        </View>
+
+        <View style={styles.mainbutton}>
+          <FontAwesome name="heart" size={28} color="#4FCC94" />
         </View>
 
         <View style={styles.button}>
-          <FontAwesome name="heart" size={24} color="#4FCC94" />
-        </View>
-
-        <View style={styles.button}>
-          <Ionicons name="flash" size={24} color="#A65CD2" />
+          <Ionicons name="flash" size={28} color="#A65CD2" />
         </View>
 
       </View>
@@ -76,12 +76,21 @@ const styles = StyleSheet.create({
     paddingBottom: 30,
   },
   button: {
-    width: 50,
-    height: 50,
+    width: 60,
+    height: 60,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: 'white',
     padding: 10,
+    borderRadius: 50,
+  },
+  mainbutton: {
+    width: 70,
+    height: 70,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'white',
+    padding: 15,
     borderRadius: 50,
   },
 })

@@ -25,7 +25,7 @@ const App = () => {
       <MaterialCommunityIcons
         name="star-four-points"
         size={activeTab === 'likes' ? 34 : 30}
-        color={activeTab === 'likes' ? '#ccab3f' : '#757575'}
+        color={activeTab === 'likes' ? '#f63a6e' : '#757575'}
         onPress={() => setActiveTab('likes')}
       />
       <Ionicons
