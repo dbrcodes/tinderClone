@@ -6,12 +6,12 @@ import DEFAULT_IMAGE from "../../TinderAssets/assets/images/default-image.jpg"; 
 
 const MatchScreen = () => {
   return (
-    <SafeAreaView style={[styles.root, SafeViewAndroid.AndroidSafeArea]}>
+    <SafeAreaView style={styles.root}>
       {/* using square brackets (creating an array) allows pulling styles from multiple sources */}
 
       <View style={styles.container} >
 
-        <Text style={{ fontWeight: 'bold', fontSize: 24, color: '#f63a6e', paddingLeft: 15, }}>
+        <Text style={styles.text}>
           New Matches
         </Text>
 
@@ -62,6 +62,12 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     borderRadius: 50,
+  },
+  text: {
+    fontWeight: 'bold',
+    fontSize: 24,
+    color: '#f63a6e',
+    paddingLeft: 15,
   }
 })
 
